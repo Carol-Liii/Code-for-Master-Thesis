@@ -10,13 +10,6 @@ thesis-project/
 │   └── lexicons/          # Required linguistic resources
 │       ├── NRC-Emotion-Lexicon/
 │       └── hurtlex-master/
-├── evaluation/
-│   ├── predictions/       # Model predictions in various formats
-│   ├── results/          # Evaluation metrics and analysis
-│   │   ├── binary/SVM/
-│   │   ├── multi-label/SVM/
-│   │   └── POS/SVM/
-│   └── exported_results/ # CSV exports for analysis
 ├── src/
 │   ├── BERT main.ipynb  # Main experimental notebook for BERT model (run in Google Colab)
 │   ├── SVM main.ipynb    # Main experimental notebook for SVM model
@@ -26,10 +19,6 @@ thesis-project/
 ├── README.md
 └── requirements.txt
 </pre>
-
-# Thesis report
-Full thesis document available at: [https://drive.google.com/file/d/1wsrNe_vciz8ZS-FtIcRFzDnMjQZHMHuv/view?usp=share_link
-](https://www.overleaf.com/read/jvcprrsffdmj#2f2c2f)
 
 # Data
 Due to privacy reasons, dataset files are not included in this repository due to privacy restrictions. To obtain the dataset, please contact the original dataset creators.
@@ -51,6 +40,10 @@ This project requires the following lexicons to be downloaded separately:
 - **Source**: [https://github.com/valeriobasile/hurtlex](https://github.com/valeriobasile/hurtlex)
 - **File**: `hurtlex_EN.tsv`
 - **Place in**: `lexicons/hurtlex-master/lexica/EN/1.2/`
+
+# Thesis report
+Full thesis document available at: [https://drive.google.com/file/d/1wsrNe_vciz8ZS-FtIcRFzDnMjQZHMHuv/view?usp=share_link
+](https://www.overleaf.com/read/jvcprrsffdmj#2f2c2f)
 
 
 # README
