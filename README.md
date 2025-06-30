@@ -22,7 +22,6 @@ thesis-project/
 │   ├── SVM main.ipynb    # Main experimental notebook for SVM model
 │   ├── utils_baseline.py # Core classification and evaluation functions
 │   └── utils_experiments.py # Feature extraction and ablation utilities
-├── .gitignore
 ├── LICENSE
 ├── README.md
 └── requirements.txt
@@ -67,22 +66,19 @@ python -m spacy download en_core_web_sm
 3. Run Experiments: Execute all cells in SVM main.ipynb sequentially
 4. Generate Output: Results will be saved in the evaluation directory
 <pre>
-thesis-project/
-├── data/
-│   ├── evaluation/        # Gold Labels 
-│   ├── datasets/          # Training, dev, test data
-│   └── lexicons/          # Required linguistic resources
-├── evaluation/
-│   ├── predictions/       # Model predictions
-│   ├── results/           # Evaluation metrics and analysis
-│   └── exported_results/  # CSV exports for analysis
-└── src/
-    ├── BERT main.ipynb    # BERT experiments
-    ├── SVM main.ipynb     # SVM experiments
-    ├── utils_baseline.py  # Core functions
-    └── utils_experiments.py # Feature extraction utilities
+evaluation/
+├── predictions/           # Model predictions for evaluation
+│   ├── MAMI/
+│   └── EXIST2024/
+├── results/              # Detailed JSON results
+│   ├── binary/
+│   │   └── SVM/          # SVM binary classification results
+│   ├── multi-label/
+│   │   └── SVM/          # SVM multi-label results  
+│   └── POS/
+│       └── SVM/          # SVM POS ablation results
+└── exported_results/     # CSV files for analysis
 </pre>
-
 
 For BERT Experiments (Google Colab)
 The BERT notebook is designed to run in Google Colab with GPU acceleration. Required packages will be installed within the notebook.
