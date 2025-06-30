@@ -1,0 +1,60 @@
+# Core scientific computing and data manipulation
+numpy>=1.21.0
+pandas>=1.3.0
+scipy>=1.7.0
+
+# Machine learning libraries
+scikit-learn>=1.0.0
+scikit-multilearn>=0.2.0
+
+# Deep learning libraries (for BERT experiments)
+torch>=1.9.0
+transformers>=4.10.0
+
+# Natural language processing
+nltk>=3.6.0
+spacy>=3.4.0
+
+# NLP model download (run after installing spacy)
+# python -m spacy download en_core_web_sm
+
+
+# Evaluation metrics
+pyevall>=1.0.0
+
+# Data processing and I/O
+json5>=0.9.0
+
+# Jupyter notebook support
+jupyter>=1.0.0
+ipykernel>=6.0.0
+
+# Optimization (for BERT training)
+# GPU support - install appropriate version based on your CUDA version
+# torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118  # For CUDA 11.8
+# torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121  # For CUDA 12.1
+
+# Optional: For improved performance
+# numba>=0.56.0
+
+# For statistical analysis
+statsmodels>=0.13.0
+
+# Progress bars
+tqdm>=4.62.0
+
+# Memory management
+psutil>=5.8.0
+
+# File handling
+glob2>=0.7
+
+# Additional utilities
+typing-extensions>=4.0.0
+collections-abc>=0.1.0
+
+# Google Colab specific (if running on Colab)
+# google-colab
+
+# Development and debugging
+ipython>=7.30.0
